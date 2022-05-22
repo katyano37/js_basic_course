@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      'use strict';
+      // задание 1
+      let tCels = prompt('Введите температуру по Цельсию');
+      let tFar = (9 / 5) * tCels + 32;
+      alert(tFar);
+      // задание 2
+      let name = 'Василий';
+      let admin = name;
+      console.log(admin);
+
+      // задание 3
+      let value1 = 10 + 10 + "10";
+      console.log(value1);
+      // 1. складываются два числа 10 + 10, в результате 20, 
+      // 2. число 20 конткатенируется со строкой 10 (20 становится строкой "20")
+      // 3. с помощью console.log выводим value2 в консоль
+      // 4. value2 = 30
+
+      let value2 = 10 + 10 + +"10";
+      console.log(value2);
+      // 1. складываются два числа 10 + 10, в результате 20, 
+      // 2. строковая "10" с помощью унарного плюса, преобразовывается в число 10
+      // 3. с помощью console.log выводим value2 в консоль
+      // 4. value2 = 30
+
+      let value3 = 10 / -"";
+      console.log(value3);      
+      // 1. унарный минус преобразовывает пустую строку в -0
+      // 2. число 10 делим на -0
+      // 3. с помощью console.log выводим value3 в консоль
+      // 4. value3 = -Infinity
+
+      let value4 = 10 / +"2,5";
+      console.log(value4);      
+      // 1. строка 2,5 не может с помощью унарного плюса стать числом, т.к вещественные числа разделяются точкой
+      // 2. число 10 делим на строку
+      // 3. с помощью console.log выводим value4 в консоль
+      // 4. value4 = NaN
+   </script>
+</body>
+</html>
